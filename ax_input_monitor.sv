@@ -217,7 +217,8 @@ class axi_inp_mon extends uvm_monitor;
 
 	//----------===	TASK_TO_PUSH_CONTROL_INFORMATION	===----------//
 
-  
+  	//----wr_rd_enable var for using same task for read,write sub-address calculations
+  	// unaligned is present for write,so to calculate unaligned addresses for write only using "wr_rd_enable"
 
   	task addr_calculation(input bit[31:0]addr,bit[2:0]size,bit[1:0]burst,bit[7:0]len,bit wr_rd_enable);
 		
