@@ -1,8 +1,7 @@
 # AXI4_UVM_BASED_VERIFICATION
-->Executed functional verification of the AXI4  protocol, emphasizing its use in high-performance, high-bandwidth system designs
 
-->Developed a UVM-based verification environment for the AXI4 protocol, supporting a single master and single slave with burst and outstanding transaction capabilities.
+-> Worked on functional verification of the AXI4 protocol, focusing on its role in high-performance and high-bandwidth systems.
 
--> Authored comprehensive Verification, Test, and Coverage plans to ensure thorough protocol validation.
+-> Built a UVM-based testbench for AXI4 with support for single master-slave communication, including burst, interleaving, and outstanding transactions.
 
 -> Implemented a functional coverage model, and a self-checking slave environment to verify DUT functionality
