@@ -398,7 +398,7 @@ class axi_inp_mon extends uvm_monitor;
           	if(rd_addr<4096)begin
           		for(int i=0;i<2**(info_rd[rd_index].ARSIZE);i++)begin//{
 					h_seqitem.RDATA[(i*8)+:8]=memory[rd_addr+i];
-					$display($time,"\t CURRENT_READ_ADDRESS is %0d  memory[%0d]=%0h",rd_addr+i,rd_addr+i,memory[wr_addr+i]);									
+					$display($time,"\t CURRENT_READ_ADDRESS is %0d  memory[%0d]=%0h",rd_addr+i,rd_addr+i,memory[rd_addr+i]);									
 				end//}
             end
           	else begin//{
